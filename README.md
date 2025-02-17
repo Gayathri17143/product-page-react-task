@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+**Products Listing with Search and Pagination
+**
+**Overview**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React-based project that fetches product data from the Fake Store API and displays it in a grid layout using Material-UI components. The project includes a search functionality to filter products based on their title and implements pagination to navigate through multiple pages of products efficiently.
 
-## Available Scripts
+**Features**
 
-In the project directory, you can run:
+Fetches Products from API: Retrieves product data dynamically from https://fakestoreapi.com/products.
 
-### `npm start`
+Material-UI Integration: Utilizes Material-UI components like Grid, TextField, Pagination, and CircularProgress for a modern UI.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Search Functionality: Users can search for products by title in real-time.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Pagination: Allows users to navigate through multiple pages with a limit of 8 products per page.
 
-### `npm test`
+Loading State: Displays a loading spinner while fetching data from the API.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Responsive Design: Works on different screen sizes, ensuring a smooth user experience.
 
-### `npm run build`
+**Installation & Setup**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Clone the repository:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+git clone https://github.com/your-username/your-repository.git
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Navigate to the project directory:
 
-### `npm run eject`
+cd your-repository
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Install dependencies:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Start the development server:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+npm start
 
-## Learn More
+**Project Structure**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+📂 src
+ ┣ 📂 components
+ ┃ ┣ 📜 ProductCard.js  # Displays individual product details
+ ┃ ┣ 📜 Products.js     # Main product listing component
+ ┃ ┗ 📜 App.js          # Entry point of the React app
+ ┣ 📜 index.js          # Renders the app
+ ┗ 📜 styles.css        # Optional custom styles
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Technologies Used**
 
-### Code Splitting
+React.js - Frontend framework
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Material-UI - UI components
 
-### Analyzing the Bundle Size
+Fake Store API - Mock product data
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+**How It Works**
 
-### Making a Progressive Web App
+The Products.js component fetches product data from the API on mount.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Users can search for products using the search bar, which dynamically filters results.
 
-### Advanced Configuration
+The pagination component allows users to navigate through multiple pages of products.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Products are displayed in a responsive grid format using Material-UI.
