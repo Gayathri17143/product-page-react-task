@@ -1,5 +1,5 @@
-**Products Listing with Search and Pagination
-**
+**Products Listing with Search and Pagination**
+
 **Overview**
 
 This is a React-based project that fetches product data from the Fake Store API and displays it in a grid layout using Material-UI components. The project includes a search functionality to filter products based on their title and implements pagination to navigate through multiple pages of products efficiently.
