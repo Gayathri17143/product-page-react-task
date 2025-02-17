@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+
+
+
+
+
+
+.title {
+    text-align: left;
+
+    font-size: 21px !important;
+
+}
+
+
+
+.product-name {
+    font-size: 21px;
+    margin: 5px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.rating {
+    display: flex;
+    align-items: "center";
+}
+
+.star {
+    width: 1.2rem;
+    height: 1.2rem;
+    position: relative;
+}
+
+.starEmpty,
+.starFull {
+    font-size: 1.2rem;
+    position: absolute;
+    overflow: hidden;
+    color: #ffc1077a;
+}
+
+.product-price {
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 20px !important;
+    color: #f7941e;
+    text-align: left;
+    padding-left: 6px;
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .title {
+        font-size: 20px;
+    }
+
+    .product-name {
+        font-size: 19px;
+    }
+
+    .product-price {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 18px;
+    }
+
+    .product-name {
+        font-size: 17px;
+    }
+
+    .product-price {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 16px;
+    }
+
+    .product-name {
+        font-size: 15px;
+    }
+
+    .product-price {
+        font-size: 14px;
+    }
+
+    .rating {
+        flex-wrap: wrap;
+    }
+}
