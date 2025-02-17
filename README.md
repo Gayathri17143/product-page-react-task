@@ -36,16 +36,6 @@ Start the development server:
 
 npm start
 
-**Project Structure**
-
-📂 src
- ┣ 📂 components
- ┃ ┣ 📜 ProductCard.js  # Displays individual product details
- ┃ ┣ 📜 Products.js     # Main product listing component
- ┃ ┗ 📜 App.js          # Entry point of the React app
- ┣ 📜 index.js          # Renders the app
- ┗ 📜 styles.css        # Optional custom styles
-
 **Technologies Used**
 
 React.js - Frontend framework
